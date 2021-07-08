@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>navbar</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" type="text/css" href="fontawesome/all/all.min.css">
+  
+<!-- 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<nav class="navbar justify-content-end navbar-expand-sm bg-dark navbar-dark sticky-top">
+		
+		<!-- navbar area -->
+
+				<nav aria-label="breadcrumb">
+					  <ol class="breadcrumb">
+					    <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+					    <li class="breadcrumb-item active" aria-current="page">create product</li>
+					  </ol>
+
+				</nav>
+		
+			<ul class="navbar-nav">
+			   <!--  <li class="nav-item">
+				     <a class="nav-link active" href="index.html">Home</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="aboutus.html">About us</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li> -->
+		
+				<!-- <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" >login</a>
+						<div class="dropdown-menu">
+						   <a class="dropdown-item" href="#">login</a>
+						   <a class="dropdown-item" href="#">log out</a>
+					</div>
+				</li>
+		    </ul> -->
+ 			
+ 			
+	</nav>
+
+	
+	   <!-- sidebar content -->
+
+   <div class="sidebar">
+				<a href="index.html"><i class="fas fa-tachometer-alt"></i></i> Dashboard</a>
+				<a href="products.html"><i class="fab fa-product-hunt"></i> products</a>
+				<a href="#">Contact</a>	
+		   </div>
+
+		  <!-- end of sidebar content -->
+
+			<!-- container class -->
+
+	<div class="container main">
+		<div class="row">
+			<div class="col-sm-6">
+
+			<!-- form content -->
+
+				<form method="post">
+					<div class="form-group">
+						<h5 class="text-center">Input Product</h5>
+					</div>
+
+					<div class="form-group">
+						<label>Product Name</label>
+						<input type="text" name="name" class="form-control" required="product name">
+					</div>
+
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col">
+								<label>Price</label>
+								<input type="text" name="price" class="form-control">
+							</div>
+							<div class="col">
+								<label>Sale</label>
+								<input type="text" name="sale" class="form-control">
+							</div>
+
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label>Quantity</label>
+						<input type="number" name="name" class="form-control">
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col">
+								<label>Category</label>
+								<select class="form-select">
+									
+									<option>cooking oil</option>
+									<option>water</option>
+									<option>milk</option>
+
+								</select>
+							</div>
+							<div class="col">
+								<label>Sub-category</label>
+								<input type="text" name="Sub-category" class="form-control">
+							</div>
+						</div>
+					</div>
+
+					  <div class="form-group">
+
+							    <label >Image</label>
+							    <input type="file" class="form-control">
+							  </div>
+
+  					<div class="form-group">
+						<label>Description</label>
+						<textarea class="form-control is-valid" required></textarea> 
+						<div class="invalid-feedback">
+							please enter a message in the text area
+						</div>
+					</div>
+					
+
+						<div class="form-group">
+							<label>Select status</label>
+						<select class="form-select">
+							<option selected>Status</option>
+							<option value="1">Active</option>
+							<option value="2">Inactive</option>
+						</select>
+					</div>
+				<br>
+					<div class="form-group">
+
+							  <!-- Button trigger modal -->
+							  
+						<button class="btn btn-success" type="submit" data-bs-toggle="modal" data-bs-target="#save1" align-right=60px;>Save</button>
+								
+										<!-- Modal -->
+										<div class="modal fade" id="save1" tabindex="-1" aria-labelledby="save1" aria-hidden="true">
+										  <div class="modal-dialog modal-dialog-centered">
+										    <div class="modal-content">
+										      <div class="modal-header">
+										       
+										        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										      </div>
+										      <div class="modal-body  text-center">
+										        Product saved Successfully
+										      </div>
+										      <div class="modal-footer">
+										       <!--  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+										       
+										      </div>
+										    </div>
+										  </div>
+										</div>
+					</div>
+
+						
+
+		</form>
+			 	
+			<!-- end of form -->	
+
+			</div>
+					<div class="col-sm-6">
+						<h4 class="text-center">components</h4>
+
+			<div class="accordion accordion-flush" id="accordionExample">
+			  <div class="accordion-item">
+			    <h2 class="accordion-header" id="headingOne">
+			      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			        Accordion Item #1
+			      </button>
+			    </h2>
+			    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+			      <div class="accordion-body">
+			        <strong>This is the first item's accordion body.</strong> It is shown by default, 
+			        until the collapse plugin adds the appropriate classes that we use to style each element.
+			         These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+			          You can modify any of this with custom CSS or overriding our default variables
+			          . It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, 
+			          though the transition does limit overflow.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="accordion-item">
+			    <h2 class="accordion-header" id="headingTwo">
+			      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			        Accordion Item #2
+			      </button>
+			    </h2>
+			    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+			      <div class="accordion-body">
+			        <strong>This is the second item's accordion body.</strong> It is hidden by default, 
+			        until the collapse plugin adds the appropriate classes that we use to style each element.
+			         These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+			          You can modify any of this with custom CSS or overriding our default variables.
+			           It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+			            though the transition does limit overflow.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="accordion-item">
+			    <h2 class="accordion-header" id="headingThree">
+			      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			        Accordion Item #3
+			      </button>
+			    </h2>
+			    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+			      <div class="accordion-body">
+			        <strong>This is the third item's accordion body.</strong> It is hidden by default, 
+			        until the collapse plugin adds the appropriate classes that we use to style each element. 
+			        These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+			         You can modify any of this with custom CSS or overriding our default variables.
+			          It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, 
+			          though the transition does limit overflow.
+			      </div>
+			    </div>
+			  </div>
+
+			</div>
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+			  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+								</div>
+				</div>
+
+	<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
